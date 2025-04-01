@@ -13,27 +13,26 @@ const Hero = () => {
       {/* Content */}
       <div className="container-custom relative z-10 h-full flex flex-col justify-center text-white">
         <div className="max-w-3xl">
-          <span className="text-china-gold font-medium mb-2 inline-block">After 7 years abroad, I'm rediscovering my roots</span>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Seeing <span className="text-china-gold">Home</span> Through <br />
-            New Eyes
+            <span className="text-china-gold">Experience China</span> <br />
+            Through Local Eyes
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl text-white/90">
-            Hi! I'm Mei Li. After years living overseas, I'm sharing my journey rediscovering the beauty, flavors, and hidden gems of my homeland through fresh perspectives.
+            Discover authentic experiences, hidden gems, and cultural insights that most travelers miss. Your insider guide to the real China.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#cities"
               className="px-6 py-3 bg-china-red hover:bg-china-red/90 text-white rounded-md transition-colors duration-300 flex items-center justify-center gap-2 group"
             >
-              My City Guides
+              Explore Cities
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#articles"
               className="px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border border-white/30 rounded-md transition-colors duration-300"
             >
-              Read My Stories
+              Read Articles
             </a>
           </div>
         </div>

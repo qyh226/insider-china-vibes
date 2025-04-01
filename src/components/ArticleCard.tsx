@@ -9,10 +9,9 @@ interface ArticleCardProps {
   image: string;
   date: string;
   className?: string;
-  personalRating?: number;
 }
 
-const ArticleCard = ({ title, excerpt, category, image, date, className, personalRating }: ArticleCardProps) => {
+const ArticleCard = ({ title, excerpt, category, image, date, className }: ArticleCardProps) => {
   return (
     <div className={cn("group cursor-pointer overflow-hidden rounded-xl h-full flex flex-col bg-white hover-scale", className)}>
       <div className="relative overflow-hidden aspect-[4/3]">
@@ -22,11 +21,6 @@ const ArticleCard = ({ title, excerpt, category, image, date, className, persona
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        {personalRating && (
-          <div className="absolute top-3 right-3 bg-china-gold text-white text-xs font-bold px-2 py-1 rounded-full">
-            {personalRating}/5 ★
-          </div>
-        )}
       </div>
       <div className="flex-1 p-6">
         <div className="flex justify-between items-center mb-2">
