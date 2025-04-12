@@ -71,7 +71,7 @@ const Index = () => {
             
             <div className="aspect-video w-full rounded-xl overflow-hidden mb-8">
               <img 
-                src="./lovable-uploads/31369bf9-d2f9-41e7-b425-9329c9876494.png" 
+                src="insider-china-vibes/lovable-uploads/31369bf9-d2f9-41e7-b425-9329c9876494.png" 
                 alt="Shanghai skyline with iconic Oriental Pearl Tower and modern skyscrapers" 
                 className="w-full h-full object-cover"
               />
