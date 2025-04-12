@@ -18,7 +18,7 @@ const Hero = () => {
             Through Local Eyes
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl text-white/90">
-            Discover authentic experiences, hidden gems, and cultural insights that most travelers miss. Your insider guide to the real China.
+            Discover authentic experiences, viral phenomena, and cultural insights that most travelers miss. Your insider guide to the real China.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -29,10 +29,10 @@ const Hero = () => {
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#articles"
+              href="#latest-article"
               className="px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border border-white/30 rounded-md transition-colors duration-300"
             >
-              Read Articles
+              Latest: iShowSpeed in China
             </a>
           </div>
         </div>

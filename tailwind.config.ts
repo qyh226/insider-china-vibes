@@ -106,8 +106,24 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
-			}
+			},
+			typography: {
+				DEFAULT: {
+					css: {
+						color: 'var(--foreground)',
+						a: {
+							color: 'var(--china-red)',
+							'&:hover': {
+								color: 'var(--china-imperial)',
+							},
+						},
+						'h1, h2, h3, h4, h5, h6': {
+							fontFamily: 'Playfair Display, serif',
+						},
+					},
+				},
+			},
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
 } satisfies Config;

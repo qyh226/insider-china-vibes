@@ -116,4 +116,32 @@
   .hover-scale {
     @apply transition-transform duration-300 hover:scale-105;
   }
+
+  .prose h2 {
+    @apply text-2xl font-bold mt-8 mb-4 font-serif;
+  }
+  
+  .prose p {
+    @apply mb-4 text-gray-800 leading-relaxed;
+  }
+  
+  .prose ul, .prose ol {
+    @apply my-4 pl-6;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose blockquote {
+    @apply my-6 pl-4 border-l-4 border-china-red italic text-gray-700;
+  }
+  
+  .prose a {
+    @apply text-china-red hover:underline;
+  }
+  
+  .prose strong {
+    @apply font-semibold;
+  }
 }
