@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/insider-china-vibes/", // Set base path for GitHub Pages deployment
+  base: "/", // Set base path for GitHub Pages deployment
   plugins: [
     react(),
     mode === 'development' &&
