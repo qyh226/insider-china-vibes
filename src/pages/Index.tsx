@@ -94,23 +94,22 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {cities.map((city, index) => (
-              <div key={index} className="group cursor-pointer rounded-xl overflow-hidden relative">
+              <div key={index} className="group cursor-pointer rounded-xl overflow-hidden relative h-64">
                 <img 
                   src={city.image} 
-                  alt={city.cityName} 
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  alt={`${city.cityName} - Featured city in China`} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 text-white">
                   <h3 className="text-2xl font-serif font-semibold mb-2">{city.cityName}</h3>
                   <p className="text-white/80 text-sm line-clamp-2 mb-2">{city.description}</p>
-                  <a 
-                    href={`#${city.cityName.toLowerCase()}`} 
+                  <span 
                     className="inline-flex items-center text-china-gold font-medium group-hover:underline text-sm"
                   >
                     Explore {city.cityName}
                     <ArrowRight size={14} className="ml-1" />
-                  </a>
+                  </span>
                 </div>
               </div>
             ))}
