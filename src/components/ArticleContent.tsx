@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Share } from "lucide-react";
 
 const ArticleContent = () => {
   return (
@@ -101,7 +102,7 @@ const ArticleContent = () => {
         </div>
         <div className="flex gap-2">
           <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">
-            <Share2 size={18} />
+            <Share size={18} />
           </button>
         </div>
       </div>
