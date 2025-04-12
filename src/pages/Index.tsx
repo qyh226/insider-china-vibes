@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import ArticleContent from "@/components/ArticleContent";
-import { ArrowRight, Share2 } from "lucide-react";
+import { Share2 } from "lucide-react";
 
 const Index = () => {
   // Cities data - kept for future expandability
@@ -71,48 +71,13 @@ const Index = () => {
             
             <div className="aspect-video w-full rounded-xl overflow-hidden mb-8">
               <img 
-                src="https://images.unsplash.com/photo-1506158669146-619067572a99?q=80&w=1920&auto=format&fit=crop" 
-                alt="Shanghai skyline - where iShowSpeed visited during his China trip" 
+                src="/lovable-uploads/31369bf9-d2f9-41e7-b425-9329c9876494.png" 
+                alt="Shanghai skyline with iconic Oriental Pearl Tower and modern skyscrapers" 
                 className="w-full h-full object-cover"
               />
             </div>
             
             <ArticleContent />
-          </div>
-        </div>
-      </section>
-
-      {/* Related Cities Section */}
-      <section id="cities" className="section-padding">
-        <div className="container-custom">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Explore Featured Cities</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Discover the locations from iShowSpeed's viral journey and other fascinating Chinese cities worth exploring.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {cities.map((city, index) => (
-              <div key={index} className="group cursor-pointer rounded-xl overflow-hidden relative h-64">
-                <img 
-                  src={city.image} 
-                  alt={`${city.cityName} - Featured city in China`} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-6 text-white">
-                  <h3 className="text-2xl font-serif font-semibold mb-2">{city.cityName}</h3>
-                  <p className="text-white/80 text-sm line-clamp-2 mb-2">{city.description}</p>
-                  <span 
-                    className="inline-flex items-center text-china-gold font-medium group-hover:underline text-sm"
-                  >
-                    Explore {city.cityName}
-                    <ArrowRight size={14} className="ml-1" />
-                  </span>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
