@@ -71,8 +71,8 @@ const Index = () => {
             
             <div className="aspect-video w-full rounded-xl overflow-hidden mb-8">
               <img 
-                src="https://images.unsplash.com/photo-1618394400882-09641d3a8826?q=80&w=1372&auto=format&fit=crop" 
-                alt="iShowSpeed in China" 
+                src="https://images.unsplash.com/photo-1506158669146-619067572a99?q=80&w=1920&auto=format&fit=crop" 
+                alt="Shanghai skyline - where iShowSpeed visited during his China trip" 
                 className="w-full h-full object-cover"
               />
             </div>
